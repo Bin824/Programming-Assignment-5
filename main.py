@@ -20,4 +20,6 @@ def hex_plus_one(digits: List[str]) -> List[str]:
         if new_value < 16:
             digits[i] = rev_hex_map[new_value]
             return digits
+        digits[i] = '0'
+        carry = 1
     return ['1'] + digits
