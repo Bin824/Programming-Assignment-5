@@ -1,7 +1,7 @@
 """
 Name: Bin Ni
 Email: bin.ni81@myhunter.cuny.edu
-Resources: 
+Resources: None
 """
 from typing import List
 
