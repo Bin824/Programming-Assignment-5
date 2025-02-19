@@ -7,7 +7,7 @@ from typing import List
 
 def hex_plus_one(digits: List[str]) -> List[str]:
     """
-    This function takes a large number stored as a list of hexadecimal digits and returns 
+    This function takes a large number stored as a list of hexadecimal digits and returns
     the large number incremented by 1
     """
     hex_map = {str(i): i for i in range(10)}
@@ -20,7 +20,4 @@ def hex_plus_one(digits: List[str]) -> List[str]:
         if new_value < 16:
             digits[i] = rev_hex_map[new_value]
             return digits
-        else:
-            digits[i] = '0'
-            carry = 1
     return ['1'] + digits
